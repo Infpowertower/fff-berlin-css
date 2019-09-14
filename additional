@@ -175,73 +175,6 @@ h3 {
      border-radius: 0;
 }
 
-/* EVENTS */
-/* hide stuff on event type */
-.ai1ec-post_thumbnail,
-.single-ai1ec_event,
-.entry-thumbnail,
-.ai1ec-pagination, 
-.ai1ec-calendar-toolbar,
-.ai1ec-posterboard-time {
-    display: none !important;
-}
-.ai1ec-clearfix:before,
-.ai1ec-clearfix:after {
-    display: initial !important;
-}
-#ai1ec-container {
-     margin-top: 20px;
-}
-a.ai1ec-btn-sm.ai1ec-sas-action-tickets {
-     background: #90D3ED;
-     border: none;
-     border-radius: 4px;
-     font-size: 1em;
-     padding: 3px 4px;
-     box-shadow: 1px 1px 1px 1px black !important;
-}
-a.ai1ec-btn-sm.ai1ec-sas-action-tickets:hover {
-    background: #90D3ED;
-    box-shadow: 3px 3px 1px 1px black !important;
-      
-}
-/* event container */
-.ai1ec-posterboard-view {
-     font-size: 0;
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     -ms-flex-wrap: wrap;
-         flex-wrap: wrap;
-     -ms-flex-pack: distribute;
-     justify-content: space-around;
-}
-/* event items */
-.ai1ec-event {
-     display: inline-block;
-     margin: 0 !important;
-}
-.ai1ec-event-title {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     -webkit-box-align: center;
-         -ms-flex-align: center;
-             align-items: center;
-}
-/* hide image in posterboard on small screens */
-@media only screen and (max-width: 640px) {
-    .ai1ec-event-wrap {
-        height: auto !important;
-    }
-    .ai1ec-posterboard-image-container {
-        display: none !important;
-    }
-    .ai1ec-posterboard-view .ai1ec-event-title-wrap {
-        margin-bottom: 0 !important;
-    }
-}
-
 /* TEXT */
 .entry-content p,
 .comment-content > p,
@@ -782,5 +715,15 @@ a.ai1ec-btn-sm.ai1ec-sas-action-tickets:hover {
 
 /* disable buggy event search bar */
 .tribe-bar-disabled {
+	display: none;
+}
+
+/* EVENTS */
+.tribe-events-title > a {
+	color: white;
+	font-size: 18px;
+}
+
+.list-date {
 	display: none;
 }
